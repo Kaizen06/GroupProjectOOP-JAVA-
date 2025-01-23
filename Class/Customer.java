@@ -1,11 +1,18 @@
 package Class;
 public class Customer {
     private String name;
-    private String contactInfo;
+    private String phoneNumber;
+    private String emailAddress;
+    private String address;
+    private String paymentMethod;
+    private String typeOfNuts;
+    private double quantity;
+    private String feedback;
 
-    public Customer(String name, String contactInfo) {
+    public Customer(String name, String emailAddress, String address) {
         this.name = name;
-        this.contactInfo = contactInfo;
+        this.emailAddress = emailAddress;
+        this.address = address;
     }
     
     public String getName() { 
@@ -13,11 +20,5 @@ public class Customer {
     }
     public void setName(String name) { 
         this.name = name; 
-    }
-    public String getContactInfo() { 
-        return contactInfo; 
-    }
-    public void setContactInfo(String contactInfo) { 
-        this.contactInfo = contactInfo; 
     }
 }
