@@ -1,16 +1,20 @@
 package Class;
 public class Supplier {
     private String name;
-    private String contactInfo;
-
-    public Supplier() {}
+    private String phoneNumber;
+    private String emailAddress;
+    private String typeOfNuts;
+    private double pricePerUnit;
+    private String shippingMethod;
+    private double deliveryFee;
+    private String address;
 
     public Supplier(String name, String contactInfo) {
         this.name = name;
         this.contactInfo = contactInfo;
     }
 
-    //Getters and setters
+    // Getters and setters
     public String getName() { 
         return name; 
     }
