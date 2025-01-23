@@ -9,9 +9,14 @@ public class Supplier {
     private double deliveryFee;
     private String address;
 
-    public Supplier(String name, String contactInfo) {
+    public Supplier(String name, String emailAddress, String typeOfNuts, double pricePerUnit, String shippingMethod, double deliveryFee, String address) {
         this.name = name;
-        this.contactInfo = contactInfo;
+        this.emailAddress = emailAddress;
+        this.typeOfNuts = typeOfNuts;
+        this.pricePerUnit = pricePerUnit;
+        this.shippingMethod = shippingMethod;
+        this.deliveryFee = deliveryFee;
+        this.address = address;
     }
 
     // Getters and setters
@@ -20,11 +25,5 @@ public class Supplier {
     }
     public void setName(String name) {
         this.name = name;
-    }
-    public String getContactInfo() {
-        return contactInfo;
-    }
-    public void setContactInfo(String contactInfo) {
-        this.contactInfo = contactInfo;
     }
 }
